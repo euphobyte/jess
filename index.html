@@ -1,0 +1,183 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+<title>JessDoesMakeUpBeauty</title>
+<style>
+html,body{
+	background-color: #222;
+	margin: 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#hd{
+	background-color: rgb(240, 209, 225);
+	text-align:center;
+	padding-bottom: 20px;
+}
+
+#main{
+	max-width: 1024px;
+	margin: auto;
+}
+
+p{
+	font-size: 18pt;
+	color: #ddd;
+}
+
+#block4 p{
+	font-size: 14pt;
+}
+
+h1{
+	font-weight: bold;
+	color: #eee;
+	font-size: 36pt;
+}
+
+#menu{	
+	display:inline-block;
+	color: #eee;
+	background-color: #555;
+	font-size: 14pt;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+label{
+	background-color: #555;
+	margin-left: 10px;
+	padding: 10px;
+}
+
+label:hover{
+	background-color: #444;
+	cursor: pointer;
+	color: white;	
+	padding: 10px;
+}
+
+input[type=radio]{
+	display: none;
+}
+
+input[type=text]{
+	padding: 4px;
+}
+
+textarea{
+	padding: 4px;
+}
+
+#radio1:checked ~ #block1{
+	display: block;
+}
+
+#radio2:checked ~ #block2{
+	display: block;
+}
+
+#radio3:checked ~ #block3{
+	display: block;
+}
+
+#radio4:checked ~ #block4{
+	display: block;
+}
+
+#main div div{
+	display: none;
+	padding-top: 40px;
+}
+
+td{
+	padding: 10px;
+}
+
+h1, h2{
+	margin-top: 0px;
+}
+
+input[type=submit]{
+	text-decoration: none;
+	border: none;
+	padding: 10px 20px;
+	color: white;
+	background-color: #555;
+	cursor: pointer;
+	font-family: "Segoe UI";
+}
+
+input[type=submit]:active {
+  background-color: #444;
+  transform: translate(1px, 1px);
+}
+
+*:focus {outline:none}
+
+</style>
+</head>
+<body>
+<div id="main">
+
+<div id="menu">
+<label for="radio1">Home</label>
+<label for="radio2">Portfolio</label>
+<label for="radio3">Contact</label>
+<label for="radio4">Over Ons</label>
+</div>
+<div id="hd"><img src="header2.jpg"></div>
+
+
+<div>
+<input id="radio1" type="radio" checked="" name="rgroup1"><div id="block1" style="background-color: #060606">
+<h1 style="padding-left:20px;padding-right:20px">Welkom bij Jess does make up beauty</h1>
+<p style="padding-left:20px;padding-right:20px">Jess does make up beauty is een Make-up artist gevestigd in Nijmegen. Jess does make up beauty verzorgt visagie voor onder andere: fotoshoots, bruiloften, theater en evenementen.
+Neem gerust  een kijkje op de website en op onze andere social media kanalen. U vindt ons op facebook (  https://www.facebook.com/Jess-does-make-up-beauty) en op instagram ( https://www.instagram.com/jessdoesmakeupbeauty/  ).  Bij interesse of  voor meer informatie over onze services,  kunt u altijd een bericht sturen. Dit kan via al onze social media kanalen en onderaan deze pagina.</p>
+<p style="padding-left:20px;padding-right:20px">CORONA: Wij bij jess does make up beauty hebben de nodige maatregelen genomen om ook tijdens de corona pandemie veilig en schoon te werken. De maatregelen die wij nemen zijn onder andere: Werken met een mondkapje op, alle producten worden met alcohol gedesinfecteerd, wij raken zo min mogelijk het gezicht aan en er wordt gebruik gemaakt van disposable kwastjes voor onder andere de lippen en de wimpers.
+</p>
+<span style="text-align: center;width:100%;display: block;">
+<img src="Facebook.png">
+<img style="padding-left:10px" src="Instagram.png">
+<img style="padding-left:10px" src="Mail.png">
+</span>
+<span style="background-image:url('main.jpg');width:100%;height:200px;display:block;opacity:0.4">Hello</span>
+</div>
+
+<input id="radio2" type="radio" name="rgroup1"><div id="block2">
+<table style="text-align: center">
+<tbody><tr><td><img src="1.jpg"></td><td><img src="3.jpg"></td><td><img src="4.jpg"></td></tr>
+<tr><td><img src="2.jpg"></td><td><img src="5.jpg"></td><td><img src="6.jpg"></td></tr>
+</tbody></table>
+</div>
+
+<input id="radio3" type="radio" name="rgroup1"><div id="block3">
+<table>
+<tbody><tr><td style="vertical-align: text-top;padding-top:0px"><p>Voor meer informatie over onze services, prijzen of extra informatie, kunt u met het contact formulier hiernaast een bericht sturen.<br>
+Wij proberen altijd zo snel mogelijk een antwoord te geven op uw vragen!</p>
+</td><td style="width: 50%; background-color: #ccc"><form style="background-color: #ccc; font-size: 12pt;color:black" action="mailto:jessdoesmakeupbeauty@gmail.com" method="post" enctype="text/plain">Voornaam:*<br><input type="text"><br>Achternaam:*<br><input type="text"><br>E-mail:*<br><input type="text"><br>Bericht:*<br><textarea cols="40" rows="4"></textarea><br><br><input type="submit"></form>
+</td></tr>
+</tbody></table>
+</div>
+
+<input id="radio4" type="radio" name="rgroup1"><div id="block4">
+<table><tbody><tr><td style="vertical-align: text-top;padding-top:0px">
+<p style="font-size: 16pt"><b>Over het bedrijf en Jess</b></p>
+<p>Jess does make up beauty is een jong bedrijf opgericht door Jess in 2020.</p>
+<p>
+Al heel haar leven heeft Jess een grote interesse gehad in alles make-up, beauty en creativiteit. Als kind speelde ze maar al te graag met de make-up van haar moeder. Later is ze haar passie helemaal gaan ontwikkelen en ontdekken. Zo heeft ze tijdens haar opleiding tot drama therapeute een cursus theater make-up gevolgd waarna ze besloot om zich volledig op make-up te focussen.  In januari 2019 is Jess begonnen aan een opleiding visagie + bij DE visagieschool in Nijmegen.
+</p>
+<p>
+Jess werkt heel graag met allerlei soorten mensen en staat altijd open voor de gekste ideeën. Jess werkt professioneel en snel maar vindt het ook belangrijk dat er een gezellige en goede sfeer is. Jess staat daarnaast ook voor positiviteit en inclusiviteit. Iedereen is welkom en belangrijk bij Jess does make up beauty, zo werkt Jess graag met verschillende huidskleuren en genderidentiteiten. Kortom bij Jess does make up beauty geloven wij dat make up voor écht iedereen is.
+</p>
+</td><td><img src="jess.png"></td>
+</tr></tbody></table>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>
