@@ -147,11 +147,11 @@ function test(event){
     var ov = document.getElementById("overlay");
     var im = document.getElementById("ovimg");
     var el = event.target;
-     ov.style.display = "flex";
 	if(el.tagName == "IMG"){
 	   var nm = el.src.split('/').pop();
 	   im.src = 'img/'+ nm;
 	}
+    ov.style.display = "flex";
 }
 function test2(){
     var ov = document.getElementById("overlay");
