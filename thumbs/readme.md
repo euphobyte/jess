@@ -1,1 +1,0 @@
-Thumbnails for demo
