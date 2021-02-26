@@ -1,0 +1,135 @@
+<html>
+<head>
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="gallery.css">
+<script src="navbar.js"></script>
+<script src="gallery.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+<style>
+body{
+    margin: 0;
+    color: #ddd;
+    background-color: #222;
+    font-family: sans-serif;
+    font-size: 14pt;
+}
+
+.back{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page2c div.back{ background-image: url("img3/back2c.jpg");}
+
+.container{
+    width: 42vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vw;
+}  
+
+.gr1{
+  display: grid;
+  grid-template-columns: repeat(4, 10vw);
+  grid-template-rows: repeat(2, 15vw) repeat(2, 8vw) 15vw 30vw;
+  grid-gap: .5vw;
+}
+
+@media (max-aspect-ratio: 3/2){
+    .container{
+        width: 10vw;
+        margin-left: 10vw;
+        margin-top: 3vw;
+    }  
+
+    .gr1{
+      display: grid;
+      grid-template-columns: repeat(4, 20vw);
+      grid-template-rows: repeat(2, 30vw) repeat(2, 16vw) 30vw 60vw;
+      grid-gap: .5vw;
+    }
+}
+
+.gr1 img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    display-block;
+    cursor: pointer;
+}
+#pic7{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#pic8{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+#pic9{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+#pic10{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+#pic13{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+#pic14{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+</style>
+<script>
+function init(){
+    initNavBar();
+}
+</script>
+</head>
+<body onLoad="init()">
+<div id="navbar" class="navbar"></div>
+<div id="page2c">
+    <div class="back" style="background-position:0% 25%"><br><br>
+        <h2>HALLOWEEN<br>MAKEUP<br>
+        <span style="font:normal 18pt sans-serif">Make-up looks voor speciale evenementen zoals halloween</span>
+    </div>
+</div>
+<div class="container">
+    <div class="gr1" onClick=clickPhoto(event)>
+        <img src="img6/2.jpg" id="pic1"></img>
+        <img src="img6/3.jpg" id="pic2"></img>
+        <img src="img6/4.jpg" id="pic3"></img>
+        <img src="img6/5.jpg" id="pic4"></img>
+        <img src="img6/6.jpg" id="pic5"></img>
+        <img src="img6/7.jpg" id="pic6"></img>
+        <img src="img6/8.jpg" id="pic7"></img>
+        <img src="img6/9.jpg" id="pic8"></img>
+        <img src="img6/10.jpg" id="pic9"></img>
+        <img src="img6/11.jpg" id="pic10"></img>
+        <img src="img6/12.jpg" id="pic11"></img>
+        <img src="img6/13.jpg" id="pic12"></img>
+        <img src="img6/14.jpg" id="pic13"></img>
+        <img src="img6/15.jpg" id="pic14"></img>
+    </div>
+</div>
+<div id="overlay"><div id="inner"><img id="ovimg" /><a class="close" onClick="clickClose()"> &#x2716;</a</div></div>
+</body>
+</html>

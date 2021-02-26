@@ -1,0 +1,136 @@
+<html>
+<head>
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="gallery.css">
+<script src="navbar.js"></script>
+<script src="gallery.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+<style>
+body{
+    margin: 0;
+    color: #ddd;
+    background-color: #222;
+    font-family: sans-serif;
+    font-size: 14pt;
+}
+
+.back{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page1 div.back{ background-image: url("img3/back1.jpg");}
+
+.container{
+    width: 44vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vw;
+}  
+
+.gr1{
+    display: grid;
+    grid-template-columns: repeat(8, 5vw);
+    grid-template-rows: .6fr .9fr;
+    grid-gap: .5vw;
+}
+
+@media (max-aspect-ratio: 3/2){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 64vw;
+        margin-top: 3vw;
+    }  
+
+    .gr1{
+    display: grid;
+    grid-template-columns: repeat(8, 8vw);
+    grid-template-rows: 1.2fr 1.8fr;
+    grid-gap: .5vw;    
+  }
+}
+
+.gr1 img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    display-block;
+    cursor: pointer;
+}
+#pic1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#pic2{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#pic3{
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#pic4{
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#pic5{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+#pic6{
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+</style>
+<script>
+function init(){
+    initNavBar();
+}
+</script>
+</head>
+<body onLoad="init()">
+<div id="navbar" class="navbar"></div>
+<div id="page1">
+    <div class="back"><br><br><h2 style="max-width: 700px;text-align:left">WELKOM BIJ JESS DOES MAKE UP BEAUTY</h2></div>
+    <div style="width:44vw;margin:auto">
+        <p>Jess Does Make Up Beauty is een freelance Make-up artiest gevestigd in Nijmegen. Jess Does Make Up Beauty verzorgt visagie voor: fotoshoots, bruiloften, theater, evenementen en meer.</p>
+        <p>Neem gerust een kijkje op deze website en op onze andere social media kanalen. U vindt ons op facebook ( https:&#x2F&#x2Fwww.facebook.com&#x2FJess-does-make-up-beauty)
+ en op instagram ( https:&#x2F&#x2Fwww.instagram.com&#x2Fjessdoesmakeupbeauty&#x2F ). Bij interesse of voor meer informatie over onze services, kunt u altijd een bericht sturen. Dit kan via al onze social media kanalen en op de website onder contact.</p>
+        <p>CORONA: Bij Jess Does Make Up Beauty zijn de nodige maatregelen genomen om ook tijdens de corona pandemie veilig en schoon te werken. De maatregelen die wij nemen zijn onder andere: Werken met een mondkapje op, alle producten worden met alcohol gedesinfecteerd, wij raken zo min mogelijk het gezicht aan en er wordt gebruik gemaakt van disposable kwastjes voor onder andere de lippen en de wimpers.</p>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="gr1" onClick="clickPhoto(event)">
+            <img src="img3/1.jpg" id="pic1"></img>
+            <img src="img3/2.jpg" id="pic2"></img>
+            <img src="img3/3.jpg" id="pic3"></img>
+            <img src="img3/4.jpg" id="pic4"></img>
+            <img src="img3/5.jpg" id="pic5"></img>
+            <img src="img3/6.png" id="pic6"></img>
+        </div>
+
+    </div>
+    <br><br>
+    <div style="text-align:center;width: 44vw;margin:auto">Credits van links naar rechts. Fotografie door: Ronald Janssen, Foto Roncken, Toon de vos, Stan Keulen fotografie , Studio Eveline. Modellen: Nikki van den Heuvel, Sannah Smits, Nikki van den Heuvel, Nadia Brinkhaus en Rosalievan der Plas. Makeup door Jess Does Make Up Beauty.</div>
+</div>
+<div id="overlay"><div id="inner"><img id="ovimg" /><a class="close" onClick="clickClose()"> &#x2716;</a</div></div>
+</body>
+</html>

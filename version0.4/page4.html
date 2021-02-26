@@ -1,0 +1,76 @@
+<html>
+<head>
+<link rel="stylesheet" href="navbar.css">
+<script src="navbar.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+<style>
+body{
+    margin: 0;
+    color: #ddd;
+    background-color: #222;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14pt;
+}
+
+#page4{
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+#page4 form{
+    background-color: grey;
+    float: right;
+    padding: 16px;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+form input, textarea, button{
+    border: none;
+    margin-bottom: 12px;
+    font-size: 14pt;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+</style>
+<script>
+function init(){
+    initNavBar();
+}
+
+function sendForm(){
+    var req = new XMLHttpRequest();
+    req.open("POST","action_page.php", true);
+    req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    req.onreadystatechange = function() {
+	    if(req.readyState == 4 && req.status == 200) {
+	        alert(req.responseText);
+	    }
+    }
+    req.send("name=crazy1");
+}
+</script>
+</head>
+<body onLoad="init()">
+<div id="navbar" class="navbar"></div>
+<div id="page4" style="width: 44vw; margin:auto; margin-top:3vw">
+<form>
+<h3>Contact formulier Jess does make up beauty</h3>
+<label>Naam:*</label><br>
+<input type="text" size="40" name="naam" required></input><br>
+<label>Email:*</label><br>
+<input type="email" size="40" name="email" required></input><br>
+<label>Bericht:*</label><br>
+<textarea cols="40" rows="4" name="bericht"></textarea><br>
+<input style="float:right" type="submit" onClick="sendForm()"></input>
+</form>
+
+<p>Voor meer informatie over onze services, prijzen of extra informatie, kunt u met het contact formulier hiernaast een bericht sturen.<br>
+Wij proberen altijd zo snel mogelijk een antwoord te geven op uw vragen!</p>
+
+</div>
+
+</body>
+</html>

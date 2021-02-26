@@ -1,0 +1,55 @@
+h2{
+    display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 5vw;
+	border: 1px solid black;
+	padding: 24px 48px;
+	margin-left: 10vw;
+	border: 2px solid grey;
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+}
+
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  	align-items: center;
+	justify-content: center;
+    overflow: auto;
+    animation-name: animateop;
+    animation-duration: 0.4s
+}
+@keyframes animateop {
+  from {opacity:0}
+  to {opacity:1}
+}
+
+#inner{
+	display: inline-block;
+	position: relative;
+}
+
+.close{
+    position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 21px;
+	font-weight: bold;
+	border-radius: 20px;
+	background-color: white;
+	padding: 0px 6px;
+	user-select: none;
+	cursor: default;
+}
+.close:hover{
+    color: black;
+}
+#overlay img{
+    max-height: 90vh;
+    max-width: 90vw;
+}
